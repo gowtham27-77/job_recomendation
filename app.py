@@ -4,7 +4,7 @@ import pandas as pd
 app = Flask(__name__)
 
 # Load the recommendations data
-recommendations_df = pd.read_pickle('recommendations.pkl')
+recommendations_df = pd.read_pickle('job_recommendations.pkl')
 
 @app.route('/')
 def home():
